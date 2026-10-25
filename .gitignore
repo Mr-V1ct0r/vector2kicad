@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+
+# PyInstaller build output (the .exe is shipped via Releases, not committed)
+build/
+dist/
+*.spec
+
+# Per-user GUI settings (also stored under %APPDATA%, this is just a safety net)
+settings.json
+
+# Local normalized-SVG dumps and test output
+*.norm.svg
+out/
+
+# Personal / dev docs (not published to the public repo)
+WEBSITE_tools_page_draft.md
+ROADMAP.md
+RELEASE.md

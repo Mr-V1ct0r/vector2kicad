@@ -1,0 +1,15 @@
+# Vector2KiCad dependencies.
+#
+# svg2mod is PINNED on purpose. Vector2KiCad patches svg2mod's internals at
+# runtime (the hole-bridging crash fix, the layer tracker, and the winding
+# normalizer in vector2kicad.py _patch_svg2mod). Those patches target specific
+# internal methods, so a different svg2mod version could change them and break
+# the tool quietly. Test thoroughly before changing this pin.
+svg2mod==1.2
+
+# SVG parsing and the layer normalizer.
+lxml>=5.0
+
+# Only needed for .ai input. Provides page.get_drawings() with per-path layer
+# tags, which is how the .ai reader pulls Illustrator layers. Tested with 1.27.
+pymupdf>=1.24.0
