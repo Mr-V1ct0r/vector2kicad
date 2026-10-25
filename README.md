@@ -26,13 +26,24 @@ and breaking imports:
    that crash to skip the unbridgeable hole (left filled, and reported) instead
    of aborting, and validates the output's paren balance so it always imports.
 
-## Install
+## Download
+
+**Windows:** download the latest `Vector2KiCad.exe` from the
+[Releases page](https://github.com/Mr-V1ct0r/vector2kicad/releases/latest) and
+double-click it. No Python needed. The first run shows a Windows SmartScreen
+notice because the app is not code signed; click More info, then Run anyway.
+
+**Mac and Linux:** run from source (see below).
+
+You also need [KiCad](https://www.kicad.org/) installed separately.
+
+## Install (run from source)
 
 ```
 pip install svg2mod lxml pymupdf
 ```
-(All present on this machine. Needs Python 3 with Tk. `pymupdf` is only needed
-for `.ai` input. Runs on Windows, macOS, and Linux.)
+(Needs Python 3 with Tk. `pymupdf` is only needed for `.ai` input. Runs on
+Windows, macOS, and Linux.)
 
 ## Use
 
